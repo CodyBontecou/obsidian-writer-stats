@@ -1,0 +1,9 @@
+{
+  "id": "obsidian-writer-stats",
+  "name": "Writer Statistics Dashboard",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Track daily word counts, streaks, and writing goals with a beautiful dashboard.",
+  "author": "Cody Bontecou",
+  "isDesktopOnly": false
+}

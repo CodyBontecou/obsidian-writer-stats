@@ -1,0 +1,161 @@
+/* ─── Writer Statistics Dashboard ───────────────────────────────────────── */
+
+.writer-stats-dashboard {
+  padding: 16px;
+  font-size: 13px;
+  user-select: none;
+  overflow-y: auto;
+}
+
+/* ── Sections ───────────────────────────────────────────────────────────── */
+
+.writer-stats-section {
+  margin-bottom: 20px;
+}
+
+.writer-stats-section-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-normal);
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+/* ── Today's Stats Row ──────────────────────────────────────────────────── */
+
+.writer-stats-today-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.writer-stats-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 10px 8px;
+  border-radius: 8px;
+  background-color: var(--background-secondary);
+}
+
+.writer-stats-stat-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-normal);
+  line-height: 1.2;
+}
+
+.writer-stats-stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+/* ── Goal Progress Bar ──────────────────────────────────────────────────── */
+
+.writer-stats-goal {
+  margin-top: 4px;
+}
+
+.writer-stats-goal-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.writer-stats-progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--background-modifier-border);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.writer-stats-progress-fill {
+  height: 100%;
+  background-color: var(--interactive-accent);
+  border-radius: 5px;
+  transition: width 0.4s ease;
+  min-width: 0;
+}
+
+.writer-stats-progress-complete {
+  background-color: var(--color-green, #4caf50);
+}
+
+/* ── Streak ─────────────────────────────────────────────────────────────── */
+
+.writer-stats-streak {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: var(--background-secondary);
+}
+
+.writer-stats-streak-number {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--interactive-accent);
+  line-height: 1;
+}
+
+.writer-stats-streak-label {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* ── Chart Container ────────────────────────────────────────────────────── */
+
+.writer-stats-chart-container {
+  width: 100%;
+  padding: 8px 0;
+}
+
+.writer-stats-chart-container svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ── 7-Day Bar Chart ────────────────────────────────────────────────────── */
+
+.writer-stats-bar-chart .writer-stats-bar {
+  fill: var(--interactive-accent);
+  opacity: 0.85;
+}
+
+.writer-stats-bar-chart .writer-stats-bar:hover {
+  opacity: 1;
+}
+
+.writer-stats-bar-chart .writer-stats-bar-label {
+  fill: var(--text-muted);
+  font-size: 9px;
+  font-family: var(--font-interface);
+}
+
+.writer-stats-bar-chart .writer-stats-bar-value {
+  fill: var(--text-normal);
+  font-size: 8px;
+  font-weight: 600;
+  font-family: var(--font-interface);
+}
+
+/* ── 30-Day Sparkline ───────────────────────────────────────────────────── */
+
+.writer-stats-sparkline .writer-stats-spark-line {
+  stroke: var(--interactive-accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.writer-stats-sparkline .writer-stats-spark-fill {
+  fill: var(--interactive-accent);
+  opacity: 0.12;
+}

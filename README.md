@@ -40,6 +40,11 @@ An Obsidian plugin that tracks your daily writing statistics, streaks, and goals
 1. Copy `main.js`, `manifest.json`, and `styles.css` into your vault's `.obsidian/plugins/obsidian-writer-stats/` directory.
 2. Enable the plugin in Obsidian's Community Plugins settings.
 
+
+## Inspiration
+
+This plugin was built in response to a request by u/Miserable-Singer330 in [this Reddit thread](https://www.reddit.com/r/ObsidianMD/comments/1r8vw0w/anyone_have_a_plugin_request/) — a writing statistics dashboard with streaks and goals.
+
 ## Author
 
 Cody Bontecou

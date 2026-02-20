@@ -27,6 +27,19 @@ An Obsidian plugin that tracks your daily writing statistics, streaks, and goals
 | Include folders | Only track these folders (comma-separated) | All |
 | Exclude folders | Never track these folders (comma-separated) | None |
 
+## Installation
+
+### From Community Plugins
+
+1. Open **Settings → Community Plugins → Browse**
+2. Search for "Writer Statistics Dashboard"
+3. Click **Install**, then **Enable**
+
+### Manual Installation
+
+1. Copy `main.js`, `manifest.json`, and `styles.css` into your vault's `.obsidian/plugins/obsidian-writer-stats/` directory.
+2. Enable the plugin in Obsidian's Community Plugins settings.
+
 ## Author
 
 Cody Bontecou
